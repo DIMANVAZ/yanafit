@@ -1,0 +1,15 @@
+@use "sass:math";
+
+$logoColors:(
+  #F207A0,
+  #F294D1,
+  #F2F2F2,
+  #7503A6,
+  #9D4EBF,
+);
+
+$index:math.ceil(math.random()*5);
+
+@function rnd($logoColors){
+  @return nth($logoColors,$index)
+}
